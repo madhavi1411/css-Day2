@@ -1,0 +1,71 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <meta http-equiv="X-UA-Compatible" content="ie=edge">
+    <title>Local Storage</title>
+    <script>
+        // var uname;
+        // var umail;
+        window.onload = function(){
+            document
+            .getElementById("btn")
+            .addEventListener("click", function(){
+                // alert("do you want to save the info");
+                // uname = document.getElementById("username").value;
+                // umail = document.getElementById("usermail").value;
+                // localStorage.uname = document.getElementById("username").value;
+                // localStorage.umail = document.getElementById("usermail").value;
+                    localStorage.setItem("uname", document.getElementById("username").value);
+                    localStorage.setItem("umail", document.getElementById("usermail").value);
+            });
+
+            document.getElementById("readbtn").addEventListener("click", function(){
+               // alert("username : "+uname+"\n"+"usermail : "+window.umail);
+               // alert("username : "+window.uname+"\n"+"usermail : "+window.umail);
+               // alert("username : "+localStorage.uname+"\n"+"usermail : "+localStorage.umail);
+               // alert("username : "+localStorage.uname+"\n"+"usermail : "+localStorage.umail);
+                alert("username : "+localStorage.getItem("uname")+" \n"+"usermail : "+localStorage.getItem("umail"));
+            })
+            document.getElementById("clearbtn").addEventListener("click", function(){
+                localStorage.clear();
+                alert("all clear");
+            })
+        };
+    </script>
+</head>
+<body>
+    <h1>Local Storage Ex</h1>
+    <fieldset>
+        <legend>Store User Data</legend>
+        <table>
+            <tr>
+                <td>User Name</td>
+                <td>
+                    <input type="text" id="username">
+                </td>
+            </tr>
+            <tr>
+                <td>User eMail</td>
+                <td>
+                    <input type="text" id="usermail">
+                </td>
+            </tr>
+            <tr>
+                <td>&nbsp;</td>
+                <td>
+                    <!-- <input type="submit" value="Add User Data"> -->
+                    <!-- <button>
+                        <h1>valtech</h1>
+                        <h3>bangalore</h3>
+                    </button> -->
+                    <button id="btn">Add User Data</button>
+                </td>
+            </tr>
+        </table>
+    </fieldset>
+    <button id="readbtn">Read Value</button>
+    <button id="clearbtn">Clear Values</button>
+</body>
+</html>
