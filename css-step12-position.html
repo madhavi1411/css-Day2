@@ -1,0 +1,76 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <meta http-equiv="X-UA-Compatible" content="ie=edge">
+    <title>CSS Selectors</title>
+    <style>
+      body{
+            width: 750px;
+            margin: auto;
+      }
+      header, footer{
+          background-color: dimgrey;
+      }
+      section{
+          background-color: lightslategray;
+          position: relative;
+          height: 400px;
+      }
+      article{
+          width: 250px;
+          text-align: justify;
+      }
+      h1,h3{
+          margin: 0px;
+      }
+      #box1{
+          left: 0px;
+          top: 0px;
+          position: absolute;
+      }
+      #box2{
+          left: 250px;
+          top: 0px;
+          position: absolute;
+      }
+      #box3{
+          left: 500px;
+          top: 0px;
+          position: absolute;
+      }
+    </style>
+</head>
+<body>
+   <header>
+       <h1>Welcome to Valtech Bangalore</h1>
+   </header>
+   <section>
+       <article id="box1">
+           <h1>Superman</h1>
+           <img src="images/superman.jpg" alt="superman">
+           <p>
+               Lorem ipsum dolor sit amet consectetur adipisicing elit. Nisi alias numquam aliquam enim nobis ipsa, deserunt optio aliquid maxime unde et autem hic harum quaerat, labore officia saepe, qui tempora.
+           </p>
+       </article>
+       <article id="box2">
+           <h1>Ironman</h1>
+           <img src="images/ironman.jpg" alt="ironman" >
+           <p>
+               Lorem ipsum dolor sit amet consectetur adipisicing elit. Nisi alias numquam aliquam enim nobis ipsa, deserunt optio aliquid maxime unde et autem hic harum quaerat, labore officia saepe, qui tempora.
+            </p>
+        </article>
+        <article id="box3">
+            <h1>Phantom</h1>
+            <img src="images/phantom.jpg" alt="phantom" >
+           <p>
+               Lorem ipsum dolor sit amet consectetur adipisicing elit. Nisi alias numquam aliquam enim nobis ipsa, deserunt optio aliquid maxime unde et autem hic harum quaerat, labore officia saepe, qui tempora.
+           </p>
+       </article>
+    </section>
+    <footer>
+        <h3>&copy; Copyrights reserved by Valtech Bangalore</h3>
+    </footer>
+</body>
+</html>

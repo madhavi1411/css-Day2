@@ -1,0 +1,61 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <meta http-equiv="X-UA-Compatible" content="ie=edge">
+    <title>CSS Selectors</title>
+    <style>
+      p:lang(en){
+          background-color: red
+      }
+      p:lang(fr){
+          background-color: green
+      }
+      p:lang(es){
+          background-color: blue
+      }
+      li:first-child{
+          background-color: brown;
+      }
+      li:last-child{
+          background-color: blueviolet;
+      }
+      li:nth-child(4){
+          background-color: darkkhaki;
+      }
+    </style>
+</head>
+<body>
+    <p lang="en">
+        Lorem ipsum dolor sit amet consectetur adipisicing elit. Facere sit vel cupiditate nemo dignissimos temporibus, praesentium reiciendis, similique libero, repellat perspiciatis minima fugiat impedit harum tenetur veniam alias fugit ex.
+    </p>
+    <p lang="fr">
+        Lorem ipsum dolor sit amet consectetur adipisicing elit. Facere sit vel cupiditate nemo dignissimos temporibus, praesentium reiciendis, similique libero, repellat perspiciatis minima fugiat impedit harum tenetur veniam alias fugit ex.
+    </p>
+    <p lang="es">
+        Lorem ipsum dolor sit amet consectetur adipisicing elit. Facere sit vel cupiditate nemo dignissimos temporibus, praesentium reiciendis, similique libero, repellat perspiciatis minima fugiat impedit harum tenetur veniam alias fugit ex.
+    </p>
+    <ul>
+        <li>First List Item 1</li>
+        <li>First List Item 2</li>
+        <li>First List Item 3</li>
+        <li>First List Item 4</li>
+        <li>First List Item 5</li>
+    </ul>
+    <ul>
+        <li>Second List Item 1</li>
+        <li>Second List Item 2</li>
+        <li>Second List Item 3</li>
+        <li>Second List Item 4</li>
+       <li>Second List Item 5</li>
+    </ul>
+   <ul>
+       <li>Third List Item 1</li>
+       <li>Third List Item 2</li>
+       <li>Third List Item 3</li>
+       <li>Third List Item 4</li>
+       <li>Third List Item 5</li>
+   </ul>
+</body>
+</html>

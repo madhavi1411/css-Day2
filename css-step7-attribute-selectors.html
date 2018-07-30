@@ -1,0 +1,43 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <meta http-equiv="X-UA-Compatible" content="ie=edge">
+    <title>CSS Selectors</title>
+    <style>
+        /* img[alt]{
+            border: 2px dashed red;
+        } */
+        /* img[width='100']{
+            border: 2px dashed red;
+        } */
+        /* img[alt ^='super']{
+            border: 2px dashed red;
+        } */
+        /* img[alt $='man']{
+            border: 2px dashed red;
+        } */
+        img[alt *='r']{
+            border: 2px dashed red;
+        }
+        div[class='box']{
+            border: 5px dotted red;
+        }
+    </style>
+</head>
+<body>
+   <img src="images/rajani.jpg"     alt="rajani"    width="100" >
+   <img src="images/batman.jpg"     alt="batman"    width="100">
+   <img src="images/ironman.jpg"    alt="ironman"   width="100">
+   <img src="images/supergirl.jpg"  alt="supergirl"  width="100">
+   <img src="images/spiderman.jpg"  alt="spiderman"  width="100">
+   <img src="images/supergirl.jpg"  alt="supergirl"  width="99">
+   <img src="images/phantom.jpg"    alt="phantom"   width="100">
+   <img src="images/robin.jpg"                      width="100">
+   <img src="images/superman.jpg"   alt="superman"   width="100">
+   <div class="box">
+       Lorem ipsum dolor sit, amet consectetur adipisicing elit. Dolor fugiat nostrum obcaecati ad. Repellendus, explicabo iste aliquam esse accusamus quibusdam quos quaerat adipisci cum asperiores tempore labore reprehenderit magni recusandae.
+   </div>
+</body>
+</html>

@@ -1,0 +1,89 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <meta http-equiv="X-UA-Compatible" content="ie=edge">
+    <title>CSS Selectors</title>
+    <style>
+        /* body{
+            background-color: dodgerblue;
+        } */
+     /* li:nth-child(odd){
+         background-color: chartreuse;
+     } */
+     /* li:nth-child(even){
+         background-color: chartreuse;
+     } */
+     /*
+     2*0+5
+     2*1+5
+
+     2*0-1
+     */
+     /* li:nth-child(2n-1){
+         background-color: chartreuse;
+     }
+     p:nth-of-type(2){
+         border: 2px solid red;
+     }
+     p:nth-last-of-type(2){
+         border: 5px dotted gray;
+     }
+     li:first-of-type{
+         border: 2px solid blue;
+     }
+     li:last-of-type{
+         border: 2px solid sienna;
+     }
+     div::selection{
+         background-color: pink;
+     } */
+     p:not(.box){
+         border: 2px solid black;
+     }
+     body > p{
+         border: 2px solid black;
+     }
+    </style>
+</head>
+<body>
+   <ul>
+       <p>Intruder</p>
+       <li> List Item 1 </li>
+       <li> List Item 2 </li>
+       <li> List Item 3 </li>
+       <li> List Item 4 </li>
+       <li> List Item 5 </li>
+       <li> List Item 6 </li>
+       <li> List Item 7 </li>
+       <li> List Item 8 </li>
+       <li> List Item 9 </li>
+       <li> List Item 10 </li>
+       <p>Intruder</p>
+       <p>Intruder</p>
+       <p>Intruder</p>
+   </ul>
+   <p class="box">
+       Lorem ipsum dolor sit amet consectetur adipisicing elit. Vitae soluta omnis temporibus odio eveniet sint cum perspiciatis, unde quis quod harum distinctio eaque corporis, autem eligendi dolor mollitia nostrum fuga!
+   </p>
+   <div>
+       Lorem ipsum dolor sit amet consectetur adipisicing elit. Non debitis dicta libero reprehenderit impedit, iure magnam at iusto, obcaecati accusantium officiis in error id repudiandae ut dolores voluptatibus iste rerum.
+   </div>
+   <div>
+       Lorem ipsum dolor sit amet consectetur adipisicing elit. Non debitis dicta libero reprehenderit impedit, iure magnam at iusto, obcaecati accusantium officiis in error id repudiandae ut dolores voluptatibus iste rerum.
+   </div>
+   <div>
+       Lorem ipsum dolor sit amet consectetur adipisicing elit. Non debitis dicta libero reprehenderit impedit, iure magnam at iusto, obcaecati accusantium officiis in error id repudiandae ut dolores voluptatibus iste rerum.
+   </div>
+   <p>
+       Lorem ipsum dolor sit amet consectetur adipisicing elit. Vitae soluta omnis temporibus odio eveniet sint cum perspiciatis, unde quis quod harum distinctio eaque corporis, autem eligendi dolor mollitia nostrum fuga!
+   </p>
+   <p>
+       Lorem ipsum dolor sit amet consectetur adipisicing elit. Vitae soluta omnis temporibus odio eveniet sint cum perspiciatis, unde quis quod harum distinctio eaque corporis, autem eligendi dolor mollitia nostrum fuga!
+   </p>
+   <p>
+       Lorem ipsum dolor sit amet consectetur adipisicing elit. Vitae soluta omnis temporibus odio eveniet sint cum perspiciatis, unde quis quod harum distinctio eaque corporis, autem eligendi dolor mollitia nostrum fuga!
+   </p>
+</body>
+</html>

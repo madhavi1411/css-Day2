@@ -1,0 +1,36 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <meta http-equiv="X-UA-Compatible" content="ie=edge">
+    <title>CSS Selectors</title>
+    <style>
+       p:first-line{
+           background-color: red;
+       }
+       p:first-letter{
+           color: aqua;
+           font-size: 50px;
+       }
+       li:before{
+           content: " hello there "
+       }
+       li:after{
+           content: url("images/rajani.jpg")
+       }
+    </style>
+</head>
+<body>
+    <p>
+        <span>Vorem ipsum dolor sit amet, consectetur adipisicing elit. Tempora suscipit, id corrupti nemo</span> eaque fugit molestias blanditiis pariatur nobis facilis ad ex culpa fuga nihil voluptatum eligendi officiis impedit aspernatur!
+    </p>
+    <ul>
+        <li> List Item 1 </li>
+        <li> List Item 2 </li>
+        <li> List Item 3 </li>
+        <li> List Item 4 </li>
+        <li> List Item 5 </li>
+    </ul>
+</body>
+</html>
